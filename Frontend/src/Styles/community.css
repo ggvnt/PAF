@@ -1,0 +1,50 @@
+.community-layout {
+    display: flex;
+    width: 100%;
+    min-height: calc(100vh - 70px); /* Adjust based on your header height */
+  }
+  
+  .community-sidebar {
+    width: 260px;
+    border-right: 1px solid #f0f0f0;
+    padding: 16px 0;
+    background-color: #fafafa;
+    overflow-y: auto;
+  }
+  
+  .community-main {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+  }
+  
+  /* Additional styles for Ant Design tabs */
+  .community-sidebar .ant-tabs-tab {
+    margin: 0;
+    padding: 12px 24px;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .community-sidebar .ant-tabs-tab-active {
+    background-color: #e6f7ff;
+    font-weight: 600;
+  }
+  
+  .community-sidebar .ant-tabs-ink-bar {
+    left: 0;
+    width: 3px !important;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .community-layout {
+      flex-direction: column;
+    }
+    
+    .community-sidebar {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #f0f0f0;
+    }
+  }
